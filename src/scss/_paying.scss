@@ -1,0 +1,286 @@
+.paying {
+  margin: 60px 0;
+
+  @media (max-width: $breakpoint992) {
+    margin: 50px 0;
+  }
+
+  @media (max-width: $breakpoint768) {
+    margin: 30px 0;
+  }
+
+  // .paying__inner
+
+  &__inner {
+    max-width: 1115px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  // .paying__title
+
+  &__title {
+    margin-bottom: 40px;
+    color: #202020;
+    text-align: center;
+    font-family: 'Brutal Type', sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 71px;
+
+    span {
+      color: #FF4505;
+    }
+
+    @media (max-width: $breakpoint992) {
+      margin-bottom: 30px;
+      font-size: 40px;
+      line-height: 120%;
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 30px;
+    }
+  }
+
+  // .paying__infos
+
+  &__infos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    margin-bottom: 30px;
+    background-color: #fff;
+
+    @media (max-width: $breakpoint768) {
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 20px;
+      padding: 30px;
+    }
+  }
+
+  // .paying__info
+
+  &__info {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+
+    p {
+      color: #000;
+      font-family: 'Brutal Type', sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    span {
+      font-family: 'Brutal Type', sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      color: #FF4505;
+    }
+
+    @media (max-width: $breakpoint992) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  // .paying__border
+
+  &__border {
+    width: 1px;
+    min-width: 1px;
+    height: 30px;
+    background-color: #BEBEBE;
+
+    @media (max-width: $breakpoint768) {
+      width: 100%;
+      min-width: 100%;
+      height: 1px;
+    }
+  }
+
+  // .paying__back
+
+  &__back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto 60px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #FF4505;
+
+    font-family: 'SF Compact Display', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    color: #FFF;
+    letter-spacing: 1px;
+
+    &:hover {
+      background-color: #f97548;
+    }
+
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 50px;
+    }
+  }
+
+  // .paying__rules
+
+  &__rules {
+    margin-bottom: 60px;
+
+    @media (max-width: $breakpoint992) {
+      margin-bottom: 50px;
+    }
+  }
+
+  // .paying__rules-title
+
+  &__rules-title {
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: 'Brutal Type', sans-serif;
+    color: #FF4505;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+
+    @media (max-width: $breakpoint768) {
+      font-size: 24px;
+      line-height: 120%;
+    }
+  }
+
+  // .paying__rules-blocks
+
+  &__rules-blocks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 25px;
+    row-gap: 25px;
+
+    @media (max-width: $breakpoint992) {
+      column-gap: 15px;
+      row-gap: 15px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  // .paying__rule
+
+  &__rule {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    p {
+      color: #202020;
+      font-family: 'SF Compact Display', sans-serif;
+      font-size: 15.625px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    svg {
+      width: 24px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      flex-direction: row;
+      column-gap: 10px;
+
+      svg {
+        min-width: 24px;
+      }
+    }
+  }
+
+  // .paying__rule--orange
+
+  &__rule--orange {
+
+    p {
+      color: #FF4505;
+    }
+  }
+
+  // .paying__advices
+
+  &__advices {}
+
+  // .paying__advices-title
+
+  &__advices-title {
+    margin-bottom: 35px;
+    color: #202020;
+    text-align: center;
+    font-family: 'Brutal Type', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0.2px;
+
+    @media (max-width: $breakpoint768) {
+      font-size: 24px;
+      line-height: 26px;
+    }
+  }
+
+  // .paying__advices-blocks
+
+  &__advices-blocks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 26px;
+    row-gap: 26px;
+
+    @media (max-width: $breakpoint992) {
+      column-gap: 15px;
+      row-gap: 15px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 25px;
+    }
+  }
+
+  // .paying__advice
+
+  &__advice {
+    display: grid;
+    justify-items: center;
+    align-items: baseline;
+    row-gap: 15px;
+    text-align: center;
+
+    p {
+      color: #A0A0A0;
+      text-align: center;
+      font-family: 'SF Compact Display', sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+}
