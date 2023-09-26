@@ -30,3 +30,23 @@ body {
   // font-family: 'Brutal Type', sans-serif;
   // font-family: 'Inter', sans-serif;
 }
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
