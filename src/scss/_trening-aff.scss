@@ -640,6 +640,7 @@
 .toggle-more-button {
   display: none;
 
+
   @media (max-width: $breakpoint768) {
     display: flex;
     width: fit-content;
